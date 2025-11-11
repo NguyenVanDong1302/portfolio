@@ -1,0 +1,85 @@
+/* Navbar Styles */
+nav {
+    position: fixed;        /* Ghim lên đầu */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;          /* Luôn nằm trên cùng */
+    background: rgba(255, 255, 255, 0.1); /* Nền trong suốt nhẹ */
+    backdrop-filter: blur(8px);           /* Hiệu ứng mờ nền (glassmorphism) */
+    -webkit-backdrop-filter: blur(8px);
+    padding: 15px 0;
+    transition: background 0.3s ease;
+}
+
+/* Khi cuộn xuống thì nền đậm hơn để dễ đọc */
+nav.scrolled {
+    background: rgba(46, 125, 50, 0.9);
+    backdrop-filter: blur(12px);
+}
+
+/* Container căn giữa nội dung */
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Link danh mục */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #a5d6a7; /* xanh lá nhạt hơn khi hover */
+}
+
+/* Menu toggle cho mobile */
+.menu-toggle {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(46, 125, 50, 0.95);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        padding: 15px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

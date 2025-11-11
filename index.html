@@ -1,0 +1,391 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Document</title>
+</head>
+
+<!-- <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script> -->
+
+
+<body>
+    <header>
+        <div class="container">
+
+            <h1>Nguyễn Văn Điệp</h1>
+            <p class="tagline" id="tagline">Sinh viên Công nghệ Thông tin - Đam mê lập trình và sáng tạo</p>
+            <a href="#contact" class="btn">Liên hệ với tôi</a>
+        </div>
+    </header>
+    <div class="container-avatar">
+        <img src="https://i.pravatar.cc/150?img=12" alt="Nguyễn Văn Điệp" class="profile-img">
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">Nguyễn Văn Điệp</div>
+            <ul class="nav-links">
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#hobbies">Sở thích</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Giới thiệu</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Xin chào! Tôi là Nguyễn Văn Điệp, sinh viên ngành Công nghệ Thông tin. Với niềm đam mê công nghệ
+                        và lập trình, tôi luôn tìm tòi, học hỏi những kiến thức mới để phát triển bản thân và đóng góp
+                        vào sự phát triển của ngành CNTT.</p>
+                    <p>Tôi có định hướng trở thành một Full-stack Developer, với sự quan tâm đặc biệt đến phát triển ứng
+                        dụng web và mobile. Tôi luôn tìm kiếm cơ hội thực tập và làm việc trong môi trường chuyên nghiệp
+                        để nâng cao kỹ năng và tích lũy kinh nghiệm thực tế.</p>
+                    <button class="toggle-btn" id="about-toggle">
+                        Xem thêm <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="toggle-content" id="about-content">
+                        <p>Ngoài việc học tập, tôi thường xuyên tham gia các câu lạc bộ công nghệ và các sự kiện
+                            hackathon để mở rộng mối quan hệ và học hỏi từ các chuyên gia trong ngành. Tôi tin rằng với
+                            sự nỗ lực không ngừng và tinh thần học hỏi, tôi sẽ đạt được mục tiêu nghề nghiệp của mình.
+                        </p>
+                        <p>Trong tương lai, tôi mong muốn được làm việc trong các dự án có tác động tích cực đến cộng
+                            đồng và xã hội, đặc biệt là trong lĩnh vực giáo dục và y tế.</p>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                        alt="Học tập và làm việc">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Kỹ năng</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Kỹ năng lập trình</h3>
+                    <ul class="skill-list">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Python, Java</li>
+                        <li>ReactJS, Node.js</li>
+                        <li>SQL, MongoDB</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Kỹ năng mềm</h3>
+                    <ul class="skill-list">
+                        <li>Giao tiếp và thuyết trình</li>
+                        <li>Làm việc nhóm</li>
+                        <li>Quản lý thời gian</li>
+                        <li>Giải quyết vấn đề</li>
+                        <li>Tư duy phản biện</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Ngôn ngữ</h3>
+                    <ul class="skill-list">
+                        <li>Tiếng Việt (Bản ngữ)</li>
+                        <li>Tiếng Anh (IELTS 6.5)</li>
+                        <li>Tiếng Nhật (N5)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Dự án cá nhân</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                        alt="Website bán hàng" class="project-img">
+                    <div class="project-info">
+                        <h3>Website bán hàng thời trang</h3>
+                        <p>Xây dựng website thương mại điện tử sử dụng ReactJS và Node.js với đầy đủ chức năng giỏ hàng,
+                            thanh toán và quản lý sản phẩm.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                        alt="Ứng dụng quản lý công việc" class="project-img">
+                    <div class="project-info">
+                        <h3>Ứng dụng quản lý công việc</h3>
+                        <p>Phát triển ứng dụng quản lý công việc với tính năng tạo task, đặt deadline và theo dõi tiến
+                            độ
+                            công việc.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                        alt="Game rắn săn mồi" class="project-img">
+                    <div class="project-info">
+                        <h3>Game rắn săn mồi</h3>
+                        <p>Thiết kế và lập trình game rắn săn mồi bằng JavaScript với giao diện đẹp mắt và tính năng lưu
+                            điểm cao.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+        <div class="container">
+            <h2 class="section-title">Sở thích</h2>
+            <div class="hobbies-container">
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <!-- <i class="fas fa-code"></i> -->
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Lập trình</h3>
+                    <p>Khám phá công nghệ mới và xây dựng các dự án cá nhân</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Đọc sách</h3>
+                    <p>Sách công nghệ, phát triển bản thân và tiểu thuyết</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Âm nhạc</h3>
+                    <p>Nghe nhạc và chơi guitar trong thời gian rảnh</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                    <h3>Thể thao</h3>
+                    <p>Chơi bóng rổ và bơi lội để rèn luyện sức khỏe</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Du lịch</h3>
+                    <p>Khám phá các vùng đất mới và trải nghiệm văn hóa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <blockquote class="quote" id="quote">
+                "Công nghệ chỉ là công cụ. Để kết nối với trẻ em, chúng ta cần sự kết nối của con người."
+            </blockquote>
+            <p class="author">- Bill Gates -</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Liên hệ</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Thông tin liên hệ</h3>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-user"></i>
+                            <span>Nguyễn Văn Điệp</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-id-card"></i>
+                            <span>MSSV: 0279101054</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Lớp: D0425HNCNA3</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>nguyenvandiep@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+84 123 456 789</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Hà Nội, Việt Nam</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h3>Gửi tin nhắn</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Họ và tên</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Chủ đề</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nội dung</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block">Gửi tin nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <p>&copy; 2025 Nguyễn Văn Điệp. Tất cả các quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script src="https://kit.fontawesome.com/fe8d61f0c8.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+<script>
+    // Thay đổi slogan sau 3 giây
+    const taglines = [
+        "Sinh viên CNTT - Sẵn sàng học hỏi và đóng góp",
+        "Đam mê lập trình và công nghệ",
+        "Luôn học hỏi, luôn tiến bộ"
+    ];
+
+    // Danh sách trích dẫn
+    const quotes = [
+        { text: '"Cách để bắt đầu là ngừng nói và bắt tay vào làm."', author: "- Walt Disney -" },
+        { text: '"Công nghệ chỉ là công cụ. Để kết nối với trẻ em, chúng ta cần sự kết nối của con người."', author: "- Bill Gates -" },
+        { text: '"Học hỏi từ hôm nay để thành công vào ngày mai."', author: "- Unknown -" }
+    ];
+
+    let taglineIndex = 0;
+    let quoteIndex = 0;
+
+    function updateContent() {
+        // Cập nhật tagline
+        document.getElementById('tagline').textContent = taglines[taglineIndex];
+        taglineIndex = (taglineIndex + 1) % taglines.length;
+
+        // Cập nhật quote và author
+        const quote = quotes[quoteIndex];
+        document.getElementById('quote').textContent = quote.text;
+        document.querySelector('.author').textContent = quote.author;
+        quoteIndex = (quoteIndex + 1) % quotes.length;
+    }
+
+    // Chạy lần đầu ngay khi load
+    updateContent();
+
+    // Cập nhật nội dung mỗi 5 giây
+    setInterval(updateContent, 5000);
+    // Toggle menu trên mobile
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+        document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    // Toggle nội dung "Xem thêm"
+    document.getElementById('about-toggle').addEventListener('click', function () {
+        const content = document.getElementById('about-content');
+        const button = document.getElementById('about-toggle');
+
+        content.classList.toggle('active');
+        button.classList.toggle('active');
+
+        if (content.classList.contains('active')) {
+            button.innerHTML = 'Thu gọn <i class="fas fa-chevron-up"></i>';
+        } else {
+            button.innerHTML = 'Xem thêm <i class="fas fa-chevron-down"></i>';
+        }
+    });
+
+    // Xử lý form liên hệ
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Cảm ơn bạn đã gửi tin nhắn! Tôi sẽ phản hồi sớm nhất có thể.');
+        this.reset();
+    });
+
+    // Smooth scroll cho navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+
+                // Đóng menu trên mobile sau khi click
+                document.querySelector('.nav-links').classList.remove('active');
+            }
+        });
+    });
+
+    const toggleBtn = document.getElementById('about-toggle');
+    const toggleContent = document.getElementById('about-content');
+
+    toggleBtn.addEventListener('click', () => {
+        toggleContent.style.display = toggleContent.style.display === 'block' ? 'unset' : 'block';
+        toggleBtn.innerHTML = toggleContent.style.display === 'block'
+            ? 'Thu gọn <i class="fas fa-chevron-up"></i>'
+            : 'Xem thêm <i class="fas fa-chevron-down"></i>';
+    });
+
+</script>
